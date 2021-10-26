@@ -3,13 +3,16 @@ var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     devtool: false,
-    entry: './front.js',
+    entry: [
+        './front.js',
+        './acs.js'
+    ],
     output: {
         filename: 'js/main.js',
         path: path.resolve(__dirname, 'public'),
     },
     resolve: {
-        extensions: ['.css', '.scss'],
+        extensions: ['.css', '.scss', '.js'],
     },
     module: {
         rules: [

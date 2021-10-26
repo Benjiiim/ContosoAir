@@ -1,0 +1,52 @@
+<section class="block-search">
+  <div class="container">
+    <div class="row block-search-row">
+      <div class="block-search-row-logo">
+        <span class="icon icon-logo"></span></div>
+      <div class="col-12 col-md-5 col-lg-7 align-self-center block-search-right">
+        <div class="block-search-message">
+          <h1 class="block-search-message-title">
+            <span>{{i18n "Call.HeroMessage"}}</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<main class="container">
+    
+    <input type="hidden" id="callee-id-input" name="callee-id-input" value='{{call.teamsURL}}'>
+    <input type="hidden" id="acs-token" name="acs-token" value='{{call.acsToken}}'>
+
+    <div>
+      <button id="call-button" type="button" disabled="true" class="btn btn-md btn-primary block-search-form-button">
+        Start call
+      </button>
+      &nbsp;
+      <button id="hang-up-button" type="button" disabled="true" class="btn btn-md btn-primary block-search-form-button">
+        Hang up
+      </button>
+    </div>
+
+    <div style="height:640px; width:1110px; background-color:white; position:relative;"> 
+      <div id="remoteVideo" style="background-color: white; position:absolute; top:50%; transform: translateY(-50%);">
+      </div>
+    </div>
+
+    <div>Local Video</div>
+    <div style="height:200px; width:300px; background-color:white; position:relative;">
+      <div id="myVideo" style="background-color: white; position:absolute; top:50%; transform: translateY(-50%);">
+      </div>
+    </div>
+
+    <div>
+      &nbsp;
+      <button id="start-Video" type="button" disabled="true" class="btn btn-md btn-primary block-search-form-button">
+        start video
+      </button>
+      &nbsp;
+      <button id="stop-Video" type="button" disabled="true" class="btn btn-md btn-primary block-search-form-button">
+        stop video
+      </button>
+    </div>
+</main>

@@ -12,6 +12,7 @@ const _BookFormService = require('./book.form.service');
 const _BookService = require('./book.service');
 const _DealsService = require('./deals.service');
 const _FlightsService = require('./flights.service');
+const _CallService = require('./call.service');
 
 const PriceService = () => new _PriceService();
 const NavbarService = () => new _NavbarService();
@@ -21,6 +22,7 @@ const BookFormService = () => new _BookFormService(AirportsService());
 const BookService = () => new _BookService(BookRepository(), AirportsService());
 const DealsService = () => new _DealsService(DestinationsRepository(), DealsRepository(), AirportsService());
 const FlightsService = () => new _FlightsService(FlightsRepository(), AirportsService(), PriceService());
+const CallService = () => new _CallService();
 
 module.exports = {
     PriceService,
@@ -30,5 +32,6 @@ module.exports = {
     BookFormService,
     BookService,
     DealsService,
-    FlightsService
+    FlightsService,
+    CallService
 };

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./server.js --production",
-    "local:build": "webpack --env.NODE_ENV=development --mode=development",
+    "local:build": "webpack --env NODE_ENV=development --mode=development",
     "build": "exit 0",
     "unit-test": "jest",
     "int-test": "jest --testRegex=.*\\.ispec\\.js$",
@@ -37,7 +37,10 @@
     "passport-local": "^1.0.0",
     "popper.js": "^1.14.4",
     "serve-favicon": "^2.5.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "@azure/communication-calling": "^1.1.0",
+    "@azure/communication-common": "^1.1.0",
+    "@azure/communication-identity": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.2.1",
@@ -47,8 +50,8 @@
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^6.0.1",
     "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "webpack": "^4.22.0",
-    "webpack-cli": "^3.1.2"
+    "sass-loader": "^10.0.5",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
   }
 }
