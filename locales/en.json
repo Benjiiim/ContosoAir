@@ -6,6 +6,9 @@
     "Call": {
         "HeroMessage": "Let's have a chat!"
     },
+    "Side": {
+        "HeroMessage": "Tailored for your customer"
+    },
 	"Deals": {
 		"CitiesTitle": "Recommended for you",
 		"FlightsTitle": "Flight deals",
