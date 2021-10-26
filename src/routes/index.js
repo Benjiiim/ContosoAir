@@ -9,6 +9,7 @@ const authRouter = require('./auth');
 const homeRouter = require('./home');
 const callRouter = require('./call');
 const sideRouter = require('./side');
+const agentRouter = require('./agent')
 
 router.use('/book/flights', flightsRouter);
 router.use('/book/purchase', purchaseRouter);
@@ -20,5 +21,6 @@ router.use('/logout', authRouter);
 router.use('/', homeRouter);
 router.use('/call', callRouter)
 router.use('/side', sideRouter)
+router.use('/agent', agentRouter)
 
 module.exports = router;

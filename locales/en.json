@@ -3,6 +3,9 @@
 	"Home": {
 		"HeroMessage": "Where do you<br>want to go?"
 	},
+    "Agent": {
+        "HeroMessage": "How can we help?"
+    },
     "Call": {
         "HeroMessage": "Let's have a chat!"
     },
@@ -20,6 +23,7 @@
 	},
 	"NavbarMenu": {
 		"Book": "Book",
+        "Agent": "Help",
 		"Booked": "My Booked",
 		"Login": "Login",
 		"Greeting": "Hi, <span>%s</span>"

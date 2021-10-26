@@ -1,5 +1,6 @@
 const publicMenu = [
-    { url: '/book', text: 'NavbarMenu.Book' }
+    { url: '/book', text: 'NavbarMenu.Book' },
+    { url: '/agent', text: 'NavbarMenu.Agent' },
 ];
 
 const securedMenu = [
