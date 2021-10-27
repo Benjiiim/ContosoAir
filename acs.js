@@ -54,7 +54,7 @@ function subscribeToRemoteParticipantInCall(callInstance) {
 async function init() {
   const callClient = new CallClient();
   const tokenCredential = new AzureCommunicationTokenCredential(acsTokenInput.value);
-  callAgent = await callClient.createCallAgent(tokenCredential, { displayName: 'optional ACS user name' });
+  callAgent = await callClient.createCallAgent(tokenCredential, { displayName: 'Benjamin Talmard' });
       
   deviceManager = await callClient.getDeviceManager();
   callButton.disabled = false;
