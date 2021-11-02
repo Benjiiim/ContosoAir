@@ -3,6 +3,7 @@ import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 
 let call;
 let callAgent;
+let visitorName = "Benjamin Talmard";
 const acsTokenInput = document.getElementById("acs-token");
 const calleeInput = document.getElementById("callee-id-input");
 const callButton = document.getElementById("call-button");
@@ -54,7 +55,7 @@ function subscribeToRemoteParticipantInCall(callInstance) {
 async function init() {
   const callClient = new CallClient();
   const tokenCredential = new AzureCommunicationTokenCredential(acsTokenInput.value);
-  callAgent = await callClient.createCallAgent(tokenCredential, { displayName: 'Benjamin Talmard' });
+  callAgent = await callClient.createCallAgent(tokenCredential, { displayName: visitorName });
       
   deviceManager = await callClient.getDeviceManager();
   callButton.disabled = false;
